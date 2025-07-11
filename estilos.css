@@ -1,0 +1,80 @@
+/* Colores barbería */
+:root {
+  --azul: #1e3d59;
+  --granate: #8b0000;
+  --blanco: #ffffff;
+  --gris: #f2f2f2;
+}
+/* Bloque principal */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--gris);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--blanco);
+  padding: 30px;
+  margin-top: 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 420px;
+  border-top: 8px solid var(--granate);
+}
+/* Texto 1 */
+h1 {
+  text-align: center;
+  color: var(--azul);
+  margin-bottom: 25px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: var(--granate);
+  color: var(--blanco);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a30000;
+}
+
+.mensaje {
+  margin-top: 20px;
+  display: none;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.mensaje.ok {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.mensaje.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
